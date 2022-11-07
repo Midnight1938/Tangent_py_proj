@@ -1,0 +1,25 @@
+#+title: Sudoku Maker and solver
+#+author: Skshm
+
+** Algorithms:
+*** The Naive/Common way:
+A simple Solution would be to try every possible combination of numbers. This would work well  and easily, but would be really slow as each square has 9 possibilities and we have 81 squares. So about 9^{81} possiblities, which would put a lot of load on the CPU.
+*** The backtracking way:
++ It involves choosing only option out of any possibilities.
++ We begin by choosing an option and backtrack from it, if we reach a state where we conclude that this specific option does not give the required solution.
++ We repeat these steps by going across each available option until we get the desired solution.
++ Meaning we move any number of steps back and redo until we get the desired result.
+
+** About the Program:
+**** =Board.py=
++ We make a manual board, which I plan on making automatic.
++ Printing the Board:
+  - When =i= is divisible by 3, make a horizontal division.
+  - When =j= is divisible by 3, make a vertical division.
+    * When =j= is at the last position(8), start the same in a new line.
++ Checking validity:
+  - The Function Checks the row, column and position.
+  - It checks if the number at any position exists in the Row and Col and the box its in.
++ Solution returns weather the board is done or not by checking if all the number in a cell is filled up.
+**** =ValueMaker.py=
++ Generates a random box of values, then 
