@@ -1,6 +1,6 @@
 #!/home/Midnight/miniconda3/envs/AiMl/bin/python
 
-from PIL import Image,ImageOps,ImageEnhance
+from PIL import Image, ImageOps, ImageEnhance
 import cv2
 import os
 import imgkit
@@ -50,7 +50,7 @@ def ascii_conversion(bw_image, ascii_string):
 
 
 def get_color(image):
-    pixels = image.getdata()  
+    pixels = image.getdata()
     # Creates a list with the RGB value for each pixel
     return pixels
 

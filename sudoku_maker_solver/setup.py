@@ -1,4 +1,5 @@
-import pygame, time
+import pygame
+import time
 from src.Board import Solution, chkValidity
 from src.ValueMaker import boardMake
 
@@ -51,7 +52,8 @@ class Grid:
                 thick = 4
             else:
                 thick = 1
-            pygame.draw.line(win, (0, 0, 0), (0, i * gap), (self.width, i * gap), thick)
+            pygame.draw.line(win, (0, 0, 0), (0, i * gap),
+                             (self.width, i * gap), thick)
             pygame.draw.line(
                 win, (0, 0, 0), (i * gap, 0), (i * gap, self.height), thick
             )

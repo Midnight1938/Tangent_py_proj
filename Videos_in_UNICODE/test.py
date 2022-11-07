@@ -193,6 +193,5 @@ def main(video_path):
 
 
 if __name__ == "__main__":
-    #main("SpaceVid.mp4")
+    # main("SpaceVid.mp4")
     main("Car.mp4")
-    
