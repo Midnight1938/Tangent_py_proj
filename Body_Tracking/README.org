@@ -1,0 +1,3 @@
+* Python Project
+
+Tracks body movements with a skeletal frame
