@@ -24,7 +24,7 @@ mpHolistic = mp.solutions.holistic
 #     - Release Cam capture, and destroy the capturing
 
 # %%
-#Cam = cv2.VideoCapture(0)
+# Cam = cv2.VideoCapture(0)
 # while Cam.isOpened():
 #    ret, frame = Cam.read()
 #    cv2.imshow("Holistic Detection", frame)

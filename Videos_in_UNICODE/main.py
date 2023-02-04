@@ -90,7 +90,7 @@ line-height: 60%;
 
 
 def main(video_path):
-    #config = imgkit.config(wkhtmltoimage=r'wkhtmltoimage')
+    # config = imgkit.config(wkhtmltoimage=r'wkhtmltoimage')
     ascii_string = [" ", ".", ":", "-", "=", "+", "*", "#", "%", "@", "&"]
     fps, number_images = video_to_images(video_path)
     os.mkdir('HtmlImages')
