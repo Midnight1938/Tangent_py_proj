@@ -47,9 +47,9 @@ Day = int(Spliter[0])
 Month = int(Spliter[1])
 Year = int(Spliter[2])
 
-##**###########################**##
+## **###########################**##
 # !! DoomsDAY finder functions !! #
-##**###########################**##
+## **###########################**##
 
 
 def get_key(val):
@@ -63,11 +63,11 @@ def dooms_day(Year):
     ## gregorian calender repeats every 400 years ##
     k = Year % 400
     ## decide the anchor day ##
-    if(0 <= k < 100):
+    if (0 <= k < 100):
         anchor = 2
-    elif(100 <= k < 200):
+    elif (100 <= k < 200):
         anchor = 0
-    elif(200 <= k < 300):
+    elif (200 <= k < 300):
         anchor = 5
     else:
         anchor = 3
@@ -84,7 +84,7 @@ def dooms_day(Year):
 
 
 ##!!##############!!##
-##** Calculations **##
+## ** Calculations **##
 ##!!##############!!##
 
 Doom_Day = dooms_day(Year)

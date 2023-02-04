@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 Head =
 
 HEADER = {'User-Agent': Head}
-#URL = str(input("Enter URL: "))
+# URL = str(input("Enter URL: "))
 URL =
 Price_Expecc = 300
 
@@ -51,7 +51,7 @@ def URL_Short(Ze_URL):
 
 def check_price():
 
-    if(price < Price_Expecc):
+    if (price < Price_Expecc):
         Send_Mail()
         print("Price Below {0} and is {1}".format(Price_Expecc, price))
 
